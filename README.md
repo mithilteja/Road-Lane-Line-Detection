@@ -1,2 +1,4 @@
-# Road-Lane-Line-Detection with Python and Open CV
-Data Science Project Idea: The lines drawn on the roads guide human drivers where the lanes are. It also refers to the direction to steer the vehicle. This application is cardinal for developing driverless cars. You can build an application having the ability to identify track lines from input images or continuous video frames.
+# Road Lane-Line Detection with Python and Open CV
+Data Science Project Idea: Using computer vision techniques in Python, we will identify road lane lines in which autonomous cars must run. This will be a critical part of autonomous cars, as the self-driving cars should not cross it’s lane and should not go in opposite lane to avoid accidents.
+# Frame Masking and Hough Line Transformation
+To detect white markings in the lane, first, we need to mask the rest part of the frame. We do this using frame masking. The frame is nothing but a NumPy array of image pixel values. To mask the unnecessary pixel of the frame, we simply update those pixel values to 0 in the NumPy array. After making we need to detect lane lines. The technique used to detect mathematical shapes like this is called Hough Transform. Hough transformation can detect shapes like rectangles, circles, triangles, and lines.
